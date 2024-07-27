@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Your+Chosen+Font&display=swap" rel="stylesheet">
+    <title>单湲20岁生日快乐❤️</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f2f2f2;
+            font-family: 'Your Chosen Font', cursive;
+            animation: backgroundAnimation 5s infinite;
+        }
+        
+        #snow-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .snowflake {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: snowfall linear infinite;
+        }
+        
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+        
+        #slideshow {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        #slideshow img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        #slideshow img.active {
+            opacity: 1;
+        }
+        
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #ffafbd;
+            }
+            50% {
+                background-color: #ffc3a0;
+            }
+            100% {
+                background-color: #ffa0bd;
+            }
+        }
+        
+        
+        h1 {
+            color: #ff59b2;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+		
+        h2 {
+            color: #ff7ddd;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+		
+        img {
+            width: 200px;
+            border-radius: 50%;
+            margin: 1px 0px;
+        }
+        
+        p {
+            color: #333;
+            line-height: 1;
+			font-size: 16px;
+        }
+		
+		#x1{
+			color: #333;
+			line-height: 1;
+			font-size: 16px;
+			text-align: left;
+		}
+		
+		#x2{
+			color: #333;
+			line-height: 1.5;
+			font-size: 16px;
+			text-align: left;
+			text-indent: 2em;
+		}
+		
+		#xia{
+			max-width: 600px;
+			margin: 0 auto;
+			text-align: center;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+		
+		#s{
+			color: #333;
+			line-height: 1.5;
+			margin-bottom: 20px;
+			font-size:18 px ;
+		}
+        
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 2s forwards;
+        }
+        
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #countdown {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .time {
+            font-size: 15px;
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            animation-fill-mode: forwards;
+        }
+        
+        #days {
+            background-color: #e3e3e3;
+        }
+        
+        #hours {
+            background-color: #e0e0e0;
+        }
+        
+        #minutes {
+            background-color: #d5d5d5;
+        }
+        
+        #seconds {
+            background-color: #cccccc;
+        }
+        
+        .time span {
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 5px;
+            color: #333;
+        }
+        
+        .ribbon {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .ribbon:before,
+        .ribbon:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to bottom, #ff69b4, #ffc3a0, #ffafbd);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: ribbonAnimation 2s infinite;
+        }
+        
+        .ribbon:before {
+            top: -100px;
+            left: -50px;
+        }
+        
+        .ribbon:after {
+            top: -100px;
+            right: -50px;
+        }
+        
+        @keyframes ribbonAnimation {
+            0% {
+                transform: translate(0, 0) rotate(0);
+            }
+            100% {
+                transform: translate(-800px, -800px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="snow-container"></div>
+
+    <div class="fade-in">
+        <h1><b>单湲の生日页❤</b>️</h1>
+        <div id="s"><b>不管几岁 快乐万岁ღ</b></div>
+    </div>
+
+    
+        <h2>生日快乐 天天开心！</h2>
+        <div id="slideshow">
+           
+            <img src="./图片/2.jpg">
+            <img src="./图片/3.jpg">
+            <img src="./图片/4.jpg">
+            <img src="./图片/5.jpg">
+            <img src="./图片/6.jpg">
+            <img src="./图片/7.jpg">
+            
+			<img src="./图片/9.jpg">
+			<img src="./图片/10.jpg">
+			
+			<img src="./图片/12.jpg">
+			<img src="./图片/13.jpg">
+			<img src="./图片/14.jpg">
+			<img src="./图片/15.jpg">
+			<img src="./图片/16.jpg">
+			<img src="./图片/17.jpg">
+			<img src="./图片/18.jpg">
+			<img src="./图片/19.jpg">
+			<img src="./图片/20.jpg">
+
+        </div>
+		<div id=xia>
+        <div id="x1">To单湲：</div>
+		<div id=x2>世界灿烂盛大，欢迎你长大！</div>
+		<div id=x2>首先祝你20岁生日快乐！</div>
+		<div id=x2>只说生日快乐好像有点单调，又要说我敷衍你了，哈哈哈哈哈。那再祝福点什么好呢？</div>
+		<div id=x2>想给你点不一样的祝福，奈何文化有限，想不出什么华丽的词藻和高级的祝福。那就简单说说心里想的吧，相较于其他祝福，我更想祝你放松、祝你快乐、祝你安宁、祝你没有烦恼、祝你远离压力、祝你自由自在。当然最最最重要的是希望你能够永远做自己，听自己喜欢的歌、做自己喜欢的事、一直在自己热爱的生活里奔跑……</div>
+		<div id=x2>最后祝你不仅快乐，而且永远自由，知性从容，祝你热烈灿烂，永远有精力奔向远方，祝你天真烂漫，一直乐观的拥抱生活！</div>
+		<div id=x2>Happy Birthday！</div>
+        <p>少女不惧岁月长，永远十八逆生长！</p>
+		<p>现在是你与这个世界相遇的第</p>
+		</div>
+    
+
+    <div id="countdown">
+        <div class="time" id="days"></div>
+        <div class="time" id="hours"></div>
+        <div class="time" id="minutes"></div>
+        <div class="time" id="seconds"></div>
+    </div>
+
+    <script>
+        const birthday = new Date("2004-08-09");
+
+        function updateCountdown() {
+            const now = new Date();
+            const difference = now - birthday;
+
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((difference / 1000 / 60) % 60);
+            const seconds = Math.floor((difference / 1000) % 60);
+
+
+            document.getElementById("days").textContent = days.toString().padStart(2, "0") + "天";
+            document.getElementById("hours").textContent = hours.toString().padStart(2, "0") + "小时";
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0") + "分钟";
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0") + "秒";
+        }
+
+
+        setInterval(updateCountdown, 1000);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var currentIndex = 0;
+            var slides = $('#slideshow img');
+            var slideCount = slides.length;
+
+            function showSlide(index) {
+                slides.removeClass('active');
+                slides.eq(index).addClass('active');
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slideCount;
+                showSlide(currentIndex);
+            }
+
+
+            setInterval(nextSlide, 3000);
+
+
+            showSlide(currentIndex);
+        });
+    </script>
+    <script>
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
+            snowflake.style.opacity = Math.random();
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+
+            const randomColor = getRandomColor();
+            snowflake.style.backgroundColor = randomColor;
+
+            snowflake.innerHTML = '生日快乐❤️';
+
+            return snowflake;
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function snowfall() {
+            const snowContainer = document.getElementById('snow-container');
+            const numSnowflakes = 50; // Adjust the number of snowflakes here
+
+            for (let i = 0; i < numSnowflakes; i++) {
+                const snowflake = createSnowflake();
+                snowContainer.appendChild(snowflake);
+            }
+        }
+
+        snowfall();
+    </script>
+</body>
+
+</html>
